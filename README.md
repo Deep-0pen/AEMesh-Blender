@@ -7,11 +7,11 @@
 | **short** *submesh_count* (sc) | ❌ just 1 | ❌ just 1 | ✔        | ✔        | ✔        |
 *mesh* \[sc] 
 | &emsp; **float** *pivot_point* \[3]               | ❌      | ❌        | ✔        | ✔        | ✔        |
-| &emsp; **short** *face_indicies_count* (fc)           | ❌ / ✔**      | ✔        | ✔        | ✔        | ✔        |
-| &emsp; **short** *face_indicies* \[fc/3]\[3]           | ❌ / ✔**      | ✔        | ✔        | ✔        | ✔        |
+| &emsp; **ushort** *face_indicies_count* (fc)           | ❌ / ✔**      | ✔        | ✔        | ✔        | ✔        |
+| &emsp; **ushort** *face_indicies* \[fc/3]\[3]           | ❌ / ✔**      | ✔        | ✔        | ✔        | ✔        |
 | &emsp; **short** *triangle_strips_count* (tc)        | ✔ / ❌**      | ❌        | ❌        | ❌        | ❌        |
 | &emsp; **short** *triangle_strips* \[tc]            | ✔ / ❌**      | ❌        | ❌        | ❌        | ❌        |
-| &emsp; **short** *vertex_count* (vc)                  | ✔       | ✔        | ✔        | ✔        | ✔        |
+| &emsp; **ushort** *vertex_count* (vc)                  | ✔       | ✔        | ✔        | ✔        | ✔        |
 | &emsp; **TYPE** *vertices* \[3\*vc]\[3]                      | ✔ **short** | ❌        | ❌        | ✔ **float** | ✔ **float** |
 | &emsp; **short** *vertex_coord, sign* \[3\*vc]\[3]\[2] $(x, y, z)$, (<0&nbsp;or&nbsp;≥0) | ❌      | ✔        | ✔        | ❌        | ❌        |
 | &emsp; **TYPE** *texture_coord* \[2\*vc]\[2] $(u, v)$                          | ✔ **short**, Q8* / Q12** | ✔ **short**, Q12* | ✔ **short**, Q12* | ✔ **float** | ✔ **float** |             
